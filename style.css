@@ -1,0 +1,94 @@
+table, th, td {
+    border: 1px solid black;
+}
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-60%, -60%) scale(0);
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 10;
+    background-color: white;
+    width: 500 px;
+    max-width: 100%;
+}
+
+.modal.active{
+    transform: translate(-60%, -60%) scale(1);
+}
+
+.modal-header{
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-header .title{
+font-size: 1.25rem;
+font-weight: bold;
+padding-right: 5px;
+}
+
+.modal-header .close-button{
+    cursor: pointer;
+    border:none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+input[type=text] {
+    width: 60%;
+    padding: 12px 20px;
+    margin : 0 auto; 
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    padding-bottom: 10px;
+  }
+
+  #val {
+      padding-top: 5px;
+      width: 60%;
+  }
+  .accept, .cancel {
+    background-color: white;
+    padding: 14px 20px;
+    padding-left: 5px;
+    margin: auto;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    width: 35%;
+    display: inline-flex;
+    align-items:center;
+    justify-content:center;
+  }
+
+  label, input {
+    vertical-align: baseline;
+    width: 55px;
+}
+
+  #overlay {
+      position: fixed;
+      opacity: 0;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      pointer-events: none;
+  }
+
+  #overlay.active {
+      opacity: 1;
+      pointer-events: all;
+  }
+
+  .buttonTray {
+    text-align:center;
+    justify-content:center;
+  }
