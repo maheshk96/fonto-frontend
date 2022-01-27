@@ -4,6 +4,7 @@ This repo contains the source code for developing the front-end task using HTML/
 The initial structure of the webpage was designed using HTML and the usability was enhanced using Javascript. 
 
 The single webpage consists of a Table with information regarding the ID, Address and Valuation of properties that are stored in the backend. This data is accessed through the base url: https://take-home.hasura.app/api/rest.
+
 The Design - 
 The table data is loaded on the screen as soon as the page is loaded. The user has the option to click on the add property button and enter new property details in the overlay that has popped up. Once the data is submitted, the data is added to the backend and on refresh, the newly added data is displayed on the front-end table.
 The cancel button can be used to clear the input data from the two text boxes in the overlay and the user can go ahead and enter new data once again. 
